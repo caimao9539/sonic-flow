@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Sonic Flow</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    /* Custom Contact Form styling */
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-top: 3rem;
+    }
+    .contact-info h3 {
+      font-family: var(--font-title);
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+    }
+    .contact-info p {
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+    .form-group input, .form-group textarea {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--panel-border);
+      border-radius: 6px;
+      padding: 0.8rem;
+      color: #fff;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      transition: border-color 0.3s ease;
+    }
+    .form-group input:focus, .form-group textarea:focus {
+      outline: none;
+      border-color: var(--color-primary);
+    }
+    @media (max-width: 768px) {
+      .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="stroke: url(#logo-grad)"><defs><linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#6366f1"></stop><stop offset="100%" stop-color="#3b82f6"></stop></linearGradient></defs><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+        Sonic Flow
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#pricing">Pricing</a></li>
+        <li><a href="contact.html">Support</a></li>
+      </ul>
+      <a href="index.html#pricing" class="btn-nav">Get Started</a>
+    </div>
+  </header>
+
+  <main class="doc-container">
+    <h1>Contact Us</h1>
+    <p>Have questions about integrating our API gateway or managing your developer subscription? Get in touch with our operations team.</p>
+
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <h3>Customer Support</h3>
+        <p>Email: <a href="mailto:support@sonicapi.net" style="color: var(--color-primary); text-decoration: none;">support@sonicapi.net</a><br>Average response time: 24 hours.</p>
+
+        <h3>Registered Corporate HQ</h3>
+        <p>Sonic Flow Technologies<br>
+        16192 Coastal Highway, Lewes, Delaware 19958, United States<br>
+        <em>(Note: Please feel free to change this corporate address to match the exact address listed in your Stripe profile before publishing.)</em></p>
+
+        <h3>Telephone Inquiries</h3>
+        <p>Customer Line: +1 (302) 200-2938<br>Mon-Fri, 9:00 AM - 5:00 PM EST</p>
+      </div>
+
+      <div class="contact-form" style="background: var(--panel-bg); border: 1px solid var(--panel-border); padding: 2rem; border-radius: 12px;">
+        <form action="mailto:support@sonicapi.net" method="get" enctype="text/plain">
+          <div class="form-group">
+            <label for="name">Developer Name</label>
+            <input type="text" id="name" name="name" required placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label for="email">Work Email</label>
+            <input type="email" id="email" name="email" required placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="body" rows="4" required placeholder="How can we help you?"></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width: 100%; border: none; font-size: 1rem; cursor: pointer;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="logo">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="stroke: url(#logo-grad)"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+        Sonic Flow
+      </div>
+      <div class="footer-links">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="refund.html">Refund and Cancellation Policy</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="copyright">
+        &copy; 2026 Sonic Flow Technologies. All rights reserved. Released under the MIT License.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
